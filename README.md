@@ -105,3 +105,17 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 - Instala a dependência fastify: `$ npm i fastify`
 - Instala o ORM prisma como dependência de desenvolvimento: `$ npm i prisma -D`
 - Executando o prisma utilizando o bd SQLite: `$ npx prisma init --datasource-provider SQLite`
+
+- Modificado script no package.json para o nodejs ler o arquivo .env:
+
+```json
+"scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts"
+}
+```
+
+- Executa o processo de criação dos campos definidos no schema.prisma`$ npx prisma migrate dev`
+- Defino o nome para a migração:
+  ? Enter a name for the new migration: › create table events
+
+- Abrindo a ferramenta do prisma para visualização dos dados do bd: `$npx prisma studio`
