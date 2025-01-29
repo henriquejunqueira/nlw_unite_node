@@ -119,3 +119,5 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
   ? Enter a name for the new migration: › create table events
 
 - Abrindo a ferramenta do prisma para visualização dos dados do bd: `$npx prisma studio`
+
+- Instala a biblioteca zod de validação: `$ npm i zod`
