@@ -103,3 +103,5 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 
 - Rodando o script criado: `$ npm run dev`
 - Instala a dependência fastify: `$ npm i fastify`
+- Instala o ORM prisma como dependência de desenvolvimento: `$ npm i prisma -D`
+- Executando o prisma utilizando o bd SQLite: `$ npx prisma init --datasource-provider SQLite`
