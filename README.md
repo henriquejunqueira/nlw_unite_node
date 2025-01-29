@@ -86,3 +86,5 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 ### Configurando projeto:
 
 - Gera o package.json: `$ npm init -y`
+- Instala as dependências do typescript e da tipagem em modo de desenvolvimento: `$ npm i typescript @types/node -D`
+- Gera o tsconfig.json: `$ npx tsc --init`
