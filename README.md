@@ -88,3 +88,18 @@ CREATE UNIQUE INDEX "check_ins_attendeeId_key" ON "check_ins"("attendeeId");
 - Gera o package.json: `$ npm init -y`
 - Instala as dependências do typescript e da tipagem em modo de desenvolvimento: `$ npm i typescript @types/node -D`
 - Gera o tsconfig.json: `$ npx tsc --init`
+- Converte os arquivos typescript em javascript: `$ npx tsc`
+- Obs: Necessário incluir no final do tsconfig.json a linha: "include": ["src"]
+- Instala o tsx como dependência de desenvolvimento para facilitar o processo de conversão dos arquivos .ts para .js: `$ npm i tsx -D`
+- Executa o arquivo: `$ npx tsx src/server.ts`
+- Executa o arquivo porém observando alterações: `$ npx tsx watch src/server.ts`
+- Criado script dev no package.json:
+
+```json
+"scripts": {
+    "dev": "tsx watch src/server.ts"
+}
+```
+
+- Rodando o script criado: `$ npm run dev`
+- Instala a dependência fastify: `$ npm i fastify`
